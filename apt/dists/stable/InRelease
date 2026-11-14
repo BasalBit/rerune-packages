@@ -1,0 +1,32 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Acquire-By-Hash: yes
+Architectures: amd64 arm64
+Codename: stable
+Components: main
+Date: Sat, 14 Nov 2026 11:59:07 +0000
+Label: ReRune
+Origin: ReRune
+Suite: stable
+SHA256:
+ ed2794c1d9efdf90f3fc5be4a472385107f190ca6d089ffbfd552cade7e44147             1614 main/binary-amd64/Packages
+ c159130e591c2f143c1fffc58ea9756dc831b991808c8fd4911b0a62dad40a8e              566 main/binary-amd64/Packages.gz
+ 821c02849a2f4b8f9de28a7bbee1e9d9c6c4bb5efcf11d366a8700ca2cd26932             1614 main/binary-arm64/Packages
+ c7491c6a1ed367beb68c0bd44eac950e86ef1960708725c3a41047f8253516d8              568 main/binary-arm64/Packages.gz
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCgAdFiEEJaQ9m8YZIRRuHW/OnOTb0FO/iMsFAmr4TQsACgkQnOTb0FO/
+iMvPMxAAtWXfJb0hQL6Y2gInwXZlTBc3MAJYxbhVPP+4wwqVWJsGgBqU0i7C3ZS9
+IPMOvgxkKR31XJSEBqUHEnlgP70lR7RxmkPlzTBH2Bl77cCvVS1hc3B2Tq7hrzjM
+oCmbojg5orXmVEodflRCAQ0rPw5dT48duMYFXuff0FYTuUxjJep+EMJtYxYYjtqL
+xW4gprHm60VZAQDXeHKbL5DC4r9QquY72KsDZQ2M/6ut/vx24A9F8QCXQfVbcNRm
+m5wnNxhc7yK0vQPfnMJFFaNrjufqLtl9a3t+0apvC9MCiFeOiykjONRgxo72ljCl
+Nf90BomHxUYa6+EPDhucOit60Y8P3Wy+7y/AQ/zoUufLX+g+DTRdOK+wuZVUZkNP
+gJTrQ7CC+MWWKv0Hnw7fIdTkaK3hYxl0C+kx3l0/0M+kbk2Cy7WgbnLn1Rt3CpLs
+UgFs/dNss8gThdOlvl+hnkO/OkiFobSApBzH6Hi4jSOTh0VKHps91rfbsln9Ukgz
+darcJFPrme54HEXIzn3IamIbXKN/cmuph1xifo3pGCoF3SSIbQrdMjC/p34OWoYX
+MXBqw3t5siFabQJ9gpQkFDslB65qLTA8aXYkKhze+m3SIqgwnRuJEZjV9HvSUs29
+qv0q+nHWZxUQIzUvJo+moU/eybv8xq/mEGZJLLDB8TtLzAXRJv0=
+=NGEO
+-----END PGP SIGNATURE-----

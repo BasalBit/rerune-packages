@@ -1,0 +1,42 @@
+Package: rerune-archive-keyring
+Architecture: all
+Version: 2026.11.13
+Priority: optional
+Section: misc
+Maintainer: BasalBit GmbH <info@basalbit.com>
+Installed-Size: 1
+Filename: pool/main/r/rerune-archive-keyring/rerune-archive-keyring_2026.11.13_all.deb
+Size: 1996
+SHA256: feed7b33a634472721f0fc9b5ba494ed0f7b1dc61a7443161baf9adaf9316542
+Homepage: https://rerune.io
+Description: OpenPGP key that signs the rerune APT repository at pkg.rerune.io
+License: MIT
+
+Package: rerune
+Architecture: amd64
+Version: 1.0.21
+Priority: optional
+Section: utils
+Maintainer: BasalBit GmbH <info@basalbit.com>
+Installed-Size: 8459
+Filename: pool/main/r/rerune/rerune_1.0.21_amd64.deb
+Size: 3503218
+SHA256: 721608a593a0291674ac873ad9e503fce8eea6a01f87488c819bdce90f285443
+Homepage: https://rerune.io
+Description: CLI for rerune translation workflows
+License: MIT
+
+Package: rerune
+Architecture: amd64
+Version: 1.0.22
+Priority: optional
+Section: utils
+Maintainer: BasalBit GmbH <info@basalbit.com>
+Installed-Size: 8465
+Filename: pool/main/r/rerune/rerune_1.0.22_amd64.deb
+Size: 3505118
+SHA256: 4f6dfbe04b8c454455e1dd8095a4cdc162598929c8f1e83141f98be8edec1276
+Homepage: https://rerune.io
+Description: CLI for rerune translation workflows
+License: MIT
+

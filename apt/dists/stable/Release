@@ -1,0 +1,13 @@
+Acquire-By-Hash: yes
+Architectures: amd64 arm64
+Codename: stable
+Components: main
+Date: Sat, 14 Nov 2026 11:59:07 +0000
+Label: ReRune
+Origin: ReRune
+Suite: stable
+SHA256:
+ ed2794c1d9efdf90f3fc5be4a472385107f190ca6d089ffbfd552cade7e44147             1614 main/binary-amd64/Packages
+ c159130e591c2f143c1fffc58ea9756dc831b991808c8fd4911b0a62dad40a8e              566 main/binary-amd64/Packages.gz
+ 821c02849a2f4b8f9de28a7bbee1e9d9c6c4bb5efcf11d366a8700ca2cd26932             1614 main/binary-arm64/Packages
+ c7491c6a1ed367beb68c0bd44eac950e86ef1960708725c3a41047f8253516d8              568 main/binary-arm64/Packages.gz

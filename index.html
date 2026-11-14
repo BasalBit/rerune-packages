@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>rerune packages</title>
+<style>
+:root { --bg: #ffffff; --fg: #1d1d1f; --muted: #5f6368; --code: #f3f4f6; }
+@media (prefers-color-scheme: dark) { :root { --bg: #111214; --fg: #e8eaed; --muted: #9aa0a6; --code: #1f2125; } }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 system-ui, sans-serif; }
+main { max-width: 46rem; margin: 0 auto; padding: 3rem 1rem; }
+p { color: var(--muted); }
+code { background: var(--code); padding: .15rem .4rem; border-radius: 4px; }
+pre { background: var(--code); padding: 1rem; border-radius: 6px; overflow-x: auto; }
+pre code { padding: 0; }
+</style>
+</head>
+<body>
+<main>
+<h1>rerune packages</h1>
+<p>Signed package repositories for the <a href="https://rerune.io">rerune</a> CLI.</p>
+<h2>Debian, Ubuntu, Linux Mint, Pop!_OS (APT)</h2>
+<p>Add the repository and install rerune for amd64 or arm64:</p>
+<pre><code data-install="apt">curl -fsSL https://pkg.rerune.io/rerune-archive-keyring.gpg | sudo tee /usr/share/keyrings/rerune-archive-keyring.gpg &gt;/dev/null
+sudo tee /etc/apt/sources.list.d/rerune.sources &gt;/dev/null &lt;&lt;'EOF'
+Types: deb
+URIs: https://pkg.rerune.io/apt
+Suites: stable
+Components: main
+Architectures: amd64 arm64
+Signed-By: /usr/share/keyrings/rerune-archive-keyring.gpg
+EOF
+sudo apt update &amp;&amp; sudo apt install rerune rerune-archive-keyring
+</code></pre>
+<p>Upgrade with <code>sudo apt update &amp;&amp; sudo apt install --only-upgrade rerune</code> or a normal <code>sudo apt upgrade</code>. The <code>rerune-archive-keyring</code> package keeps the signing key in <code>/usr/share/keyrings/rerune-archive-keyring.gpg</code> up to date. Key fingerprint: <code>25A4 3D9B C619 2114 6E1D 6FCE 9CE4 DBD0 53BF 88CB</code> (<a href="rerune.asc">rerune.asc</a>).</p>
+<h2>Fedora, RHEL, Rocky Linux, AlmaLinux, CentOS Stream (RPM)</h2>
+<p>Import the signing key, add the repository and install rerune for x86_64 or aarch64 with dnf:</p>
+<pre><code data-install="rpm">sudo rpm --import https://pkg.rerune.io/rerune.asc
+sudo curl -fsSLo /etc/yum.repos.d/rerune.repo https://pkg.rerune.io/rpm/rerune.repo
+sudo dnf install rerune
+</code></pre>
+<p>The repository signs its packages and its metadata (<code>gpgcheck=1</code>, <code>repo_gpgcheck=1</code>). dnf may ask once more to import the same key for the repository metadata; accept it when the fingerprint is <code>25A4 3D9B C619 2114 6E1D 6FCE 9CE4 DBD0 53BF 88CB</code>. Upgrade with <code>sudo dnf upgrade --refresh rerune</code>, or <code>sudo yum upgrade rerune</code> on systems without dnf.</p>
+<h2>openSUSE Leap and Tumbleweed (zypper)</h2>
+<p>The same RPM repository works with zypper (best-effort; tested on openSUSE Leap 15.6 and Tumbleweed):</p>
+<pre><code data-install="zypper">sudo rpm --import https://pkg.rerune.io/rerune.asc
+sudo zypper addrepo https://pkg.rerune.io/rpm/rerune.repo
+sudo zypper refresh &amp;&amp; sudo zypper install rerune
+</code></pre>
+<p>Upgrade with <code>sudo zypper refresh &amp;&amp; sudo zypper update rerune</code>.</p>
+<h2>Arch Linux, Manjaro, EndeavourOS, Omarchy (AUR)</h2>
+<p>Install <code>rerune-bin</code> from the AUR with <code>yay -S rerune-bin</code> (or paru).</p>
+<h2>NixOS, nix-darwin, Home Manager and Nix (flake)</h2>
+<p>Try rerune with <code>nix run github:BasalBit/nix-rerune -- version</code>, install it with <code>nix profile install github:BasalBit/nix-rerune</code> and upgrade with <code>nix profile upgrade --all</code>. In a NixOS, nix-darwin or Home Manager flake, add the input <code>rerune.url = "github:BasalBit/nix-rerune";</code>, use <code>inputs.rerune.packages.${pkgs.stdenv.hostPlatform.system}.default</code>, and upgrade with <code>nix flake update rerune</code>, then rebuild. See <a href="https://github.com/BasalBit/nix-rerune">BasalBit/nix-rerune</a>.</p>
+<h2>macOS and other Linux systems (Homebrew)</h2>
+<p>Install with <code>brew install BasalBit/tap/rerune</code> and upgrade with <code>brew upgrade BasalBit/tap/rerune</code>.</p>
+<p>Every install can also update with <code>rerune update</code>.</p>
+</main>
+</body>
+</html>
